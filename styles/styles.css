@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.solutions {
+  background: red;
+}
+.solutions .link__solution {
+  display: flex;
+}
+.solutions .link__solution img {
+  height: 60px;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+}
+
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+nav .nav img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #222222;
+}
+nav ul li .active {
+  color: #eb3238;
+}
+
+header {
+  width: 100%;
+  height: 40vh;
+  background: url(../img/aboutHeader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media screen and (max-width: 500px) {
+  header {
+    background-position: 50% 50%;
+  }
+}
+header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  padding: 5em 0px;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 400px) {
+  .header {
+    margin-bottom: 40px;
+  }
+}
+.header::before {
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background: #f5070f;
+  content: "";
+  bottom: -10px;
+}
+
+.info__text {
+  margin: 20px 0px;
+}
+
+.values {
+  background: #f5f5f7;
+}
+.values__card {
+  margin-top: 6vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .values__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .values__card {
+    grid-template-columns: 1fr;
+    margin: 10px 0px;
+  }
+}
+
+.team__cards {
+  margin: 20px 0px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .team__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  .team__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.team__cards .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.conversation {
+  background-image: url(../img/conversation.png), linear-gradient(45deg, #3a3a85, #3a3a85);
+  background-repeat: no-repeat;
+  background-position: 20%;
+  margin: 20px 0px;
+  margin-bottom: 10ch;
+}
+@media screen and (min-width: 2000px) {
+  .conversation {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 880px) {
+  .conversation {
+    background-position: 30%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .conversation {
+    background-position: 40%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .conversation {
+    background-image: linear-gradient(45deg, #3a3a85, #3a3a85);
+  }
+}
+.conversation .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 580px) {
+  .conversation .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.conversation .container__header {
+  font-size: 40px;
+  color: white;
+}
+@media screen and (max-width: 880px) {
+  .conversation .container__header {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .conversation .container__header {
+    margin-bottom: 20px;
+  }
+}
+.conversation .container a {
+  border: 2px solid white;
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 620px) {
+  .conversation .container a {
+    padding: 15px 20px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 500px) {
+  footer img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer .footer {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer a {
+  text-decoration: none;
+  color: #222222;
+}
+@media screen and (max-width: 768px) {
+  footer .footer {
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .footer {
+    flex-direction: column;
+  }
+}
+footer .footer__location a {
+  text-decoration: underline;
+  text-decoration-color: #f5070f;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+footer .footer__location .mails a {
+  display: inline;
+  margin: 10px 0px;
+  line-height: 40px;
+}
+footer .footer__location img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 20px 0px;
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  footer .footer__location img {
+    display: block;
+  }
+}
+footer .footer__location p {
+  margin-bottom: 20px;
+  width: 70%;
+  line-height: 30px;
+}
+@media screen and (max-width: 500px) {
+  footer .footer__location p {
+    width: 100%;
+  }
+}
+footer .footer__location > div {
+  margin: 20px 0px;
+}
+@media screen and (max-width: 500px) {
+  footer .footer__links {
+    width: 50%;
+  }
+  footer .footer__links h3 {
+    margin-bottom: 40px;
+  }
+}
+footer .footer__links a {
+  display: block;
+  margin: 10px 0px;
+}
+footer .subscribe {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  footer .subscribe {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+footer .subscribe form {
+  margin-top: 20px;
+}
+footer .subscribe form input {
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  outline: none;
+  width: 100%;
+  border: none;
+  background: #f5f5f7;
+}
+footer .subscribe form button {
+  width: 100%;
+  border: none;
+  color: white;
+  background: #3a3a85;
+  outline: none;
+  padding: 10px 0px;
+  margin: 20px 0px;
+}/*# sourceMappingURL=styles.css.map */
